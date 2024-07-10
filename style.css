@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+      /* Add your custom styles here */
+      .header-top {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #2042B6;
+        color: white;
+        padding: 10px;
+    }
+    
+    .header-chart {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #F3F3F3;
+        color: black;
+        padding: 10px;
+        display: none;
+    }
