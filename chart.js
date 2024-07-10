@@ -35,6 +35,7 @@ const myChart = new Chart(ctx, {
         scales: {
             y: {
                 min: 0,
+                max:100,
             }
         },
         plugins: {

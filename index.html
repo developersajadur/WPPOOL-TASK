@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>WPPOOL TASK</title>
 </head>
-<body>
+<body class="bg-[#F3F3F3]">
     <!-- Top Section Header -->
     <header id="header-top" class="header-top w-full bg-[#2042B6] flex items-center py-4 px-2 lg:px-10">
         <div class="flex items-center justify-between w-full">
@@ -173,9 +173,48 @@
         </div>
         </div>
       </section>
+      <!-- All Companies -->
+       <section class="mt-10 ">
+        <div class="container bg-white rounded-2xl mx-auto p-4">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+             <div class="flex justify-between items-center">
+              <h1 class="text-4xl font-normal mb-4">All Companies</h1>
+              <form action="" class="relative mb-8">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+                <input type="text" required placeholder="Search Companies" class="w-96 pl-10 pr-3 py-2 border border-gray-300 bg-[#F3F3F3] rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              </form>
+             </div>
+              <div class="overflow-x-auto max-h-96 overflow-y-auto">
+                  <table class="min-w-full divide-y divide-gray-200">
+                      <thead class="bg-gray-50">
+                          <tr>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Company</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ticker</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Vertical</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Market Cap ($B)</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Revenue Growth</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Gross Margin</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">EV/Revenue</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">YTD Performance</th>
+                          </tr>
+                      </thead>
+                      <tbody id="company-table-body" class="bg-white divide-y divide-gray-200">
+                          <!-- Data will be populated here by JavaScript -->
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="w-full flex items-center justify-center gap-5 mt-10">
+        <button class="w-fit px-4 py-2 rounded-full border bg-[#2042B6] text-white border-gray-300">Download ‘All Companies’ Data</button>
+        <button class="w-fit px-4 py-2 rounded-full border bg-[#2042B6] text-white border-gray-300">View Methodology</div>
+      </button>
+       </section>
       
 
     <script src="/script.js"></script>
     <script src="/chart.js"></script>
+    <script src="/company.js"></script>
 </body>
 </html>
