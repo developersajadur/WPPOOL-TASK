@@ -72,5 +72,3 @@ scrollButton.addEventListener('click', () => {
 });
 
 
-// -------------------- chart part js --------------------
-
