@@ -220,48 +220,9 @@
               Explore upcoming listings that offer exciting opportunities and new possibilities, <br> showcasing the future potential of our platform.</p>
           </div>
 
-          <div class="grid grid-cols-2 lg:grid-cols-5 gap-5 mt-10 mb-10">
-            <!-- 1 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/stripe.png">
-              </div>
-            <!-- 2 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/klarna.png">
-              </div>
-            <!-- 3 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/plaid.png">
-              </div>
-            <!-- 4 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/chackout.png">
-              </div>
-            <!-- 5 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/revolut.png">
-              </div>
-            <!-- 6 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/chime.png">
-              </div>
-            <!-- 7 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/n26.png">
-              </div>
-            <!-- 8 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/brex.png">
-              </div>
-            <!-- 9 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/deel.png">
-              </div>
-            <!-- 10 -->
-              <div class="bg-white flex justify-center items-center py-4 rounded-md">
-                <img src="image/gusto.png">
-              </div>
-          </div>
+          <div id="FutureListings" class="grid grid-cols-2 lg:grid-cols-5 gap-5 mt-10 mb-10">
+            <!-- Listings will be dynamically added here -->
+          </div>          
         </section>
 
         <!-- State of USA -->
@@ -278,18 +239,14 @@
             </select>
             <p class="text-[#191618] text-lg">Click through the slides or download the report to view natively on your device.</p>
           </div>
-
-
-
-
-
-          <div class="container mx-auto">
+          <!-- slider -->
+          <div class="container mt-3 mx-auto">
             <div class="slider-container relative w-full overflow-hidden rounded-lg">
-                <div id="slider" class="slider flex gap-5">
+                <div id="slider" class="slider w-full flex gap-5">
                   <!-- slider- 1 -->
-                    <div class="slide p-4 flex">
-                      <img src="image/slide-1.png" alt="">
-                      <img src="image/slide-2.png" alt="">
+                    <div class="slide w-full p-4 flex lg:ml-[-50px]">
+                      <img class="w-full" src="image/slide-1.png" alt="">
+                      <img class="w-full" src="image/slide-2.png" alt="">
                     </div>
                   <!-- slider- 1 -->
                     <div class="slide p-4 flex ">
@@ -300,6 +257,7 @@
             </div>
         </div>
 <!-- control -->
+ <div class="w-full flex justify-between items-center">
         <div class="flex gap-4 items-center">
           <div id="next" class=" h-14 w-14 shadow-lg bg-white flex justify-center items-center rounded-full cursor-pointer">
             <i class="fa-solid fa-arrow-left text-xl text-[#2042B6]"></i>
@@ -317,17 +275,34 @@
         </select>
         <h6 class="text-black text-lg">of 37</h6>
       </div>
+    </div>
+    <div class="mr-24">
+      <button class="w-fit px-4 py-2 rounded-full border bg-[#2042B6] text-white border-gray-300 shadow-lg">Download the 2023 Report</button>
+    </div>
         </div>
-
-        
-
-
         </section>
+
+        <!-- Stories & Ideas -->
+        <section class="lg:mt-20 px-2 mb-10 lg:px-10">
+          <div class="mb-5">
+            <h1 class="text-4xl">Stories & Ideas</h1>
+            <p class="text-[#191618] text-lg">The latest news and updates</p>
+          </div>
+          <div class="stories grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 lg:gap-5 mt-16">
+            <!-- Cards will be dynamically added here -->
+          </div>
+          <div class="stories grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 lg:gap-5 mt-20">
+            <!-- Additional container for more cards if needed -->
+          </div>
+        </section>
+        
       
 
     <script src="/script.js"></script>
     <script src="/chart.js"></script>
     <script src="/company.js"></script>
     <script src="/slider.js"></script>
+    <script src="/stories.js"></script>
+    <script src="/futurelisting.js"></script>
 </body>
 </html>

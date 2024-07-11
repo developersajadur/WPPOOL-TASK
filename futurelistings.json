@@ -1,0 +1,32 @@
+[
+    {
+        "img": "/image/stripe.png"
+    },
+    {
+        "img": "/image/klarna.png"
+    },
+    {
+        "img": "/image/plaid.png"
+    },
+    {
+        "img": "/image/chackout.png"
+    },
+    {
+        "img": "/image/revolut.png"
+    },
+    {
+        "img": "/image/chime.png"
+    },
+    {
+        "img": "/image/n26.png"
+    },
+    {
+        "img": "/image/brex.png"
+    },
+    {
+        "img": "/image/deel.png"
+    },
+    {
+        "img": "/image/gusto.png"
+    }
+]
