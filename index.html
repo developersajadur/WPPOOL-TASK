@@ -140,7 +140,7 @@
             </div>
 
             <!-- pagination and select input -->
-             <div class="flex items-center justify-between mt-8">
+             <div class="flex flex-col lg:flex-row gap-5 lg:gap-0 lg:items-center justify-between mt-8">
               <div class="flex gap-5 items-center">
                 <select class="w-60 px-4 py-2 rounded-full border bg-[#2042B6] text-white border-gray-300">
                   <option value="">Sectors</option>
@@ -177,11 +177,11 @@
        <section class="mt-10 ">
         <div class="container bg-white rounded-2xl mx-auto p-4">
           <div class="bg-white p-6 rounded-lg shadow-md">
-             <div class="flex justify-between items-center">
+             <div class="flex flex-col lg:flex-row justify-between items-center">
               <h1 class="text-4xl font-normal mb-4">All Companies</h1>
               <form action="" class="relative mb-8">
                 <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
-                <input type="text" required placeholder="Search Companies" class="w-96 pl-10 pr-3 py-2 border border-gray-300 bg-[#F3F3F3] rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <input type="text" required placeholder="Search Companies" class="lg:w-96 pl-10 pr-3 py-2 border border-gray-300 bg-[#F3F3F3] rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
               </form>
              </div>
               <div class="overflow-x-auto max-h-96 overflow-y-auto">
@@ -206,7 +206,7 @@
               </div>
           </div>
       </div>
-      <div class="w-full flex items-center justify-center gap-5 mt-10">
+      <div class="w-full flex flex-col lg:flex-row items-center justify-center gap-5 mt-10">
         <button class="w-fit px-4 py-2 rounded-full border bg-[#2042B6] text-white border-gray-300">Download ‘All Companies’ Data</button>
         <button class="w-fit px-4 py-2 rounded-full border bg-[#2042B6] text-white border-gray-300">View Methodology</div>
       </button>
@@ -258,27 +258,34 @@
         </div>
 <!-- control -->
  <div class="w-full flex justify-between items-center">
-        <div class="flex gap-4 items-center">
-          <div id="next" class=" h-14 w-14 shadow-lg bg-white flex justify-center items-center rounded-full cursor-pointer">
-            <i class="fa-solid fa-arrow-left text-xl text-[#2042B6]"></i>
+        <div class="flex flex-col lg:flex-row gap-4 items-center">
+     <div class="flex">
+      <div id="next" class=" h-14 w-14 mr-5 shadow-lg bg-white flex justify-center items-center rounded-full cursor-pointer">
+        <i class="fa-solid fa-arrow-left text-xl text-[#2042B6]"></i>
+    </div>
+    <div id="prev" class=" h-14 w-14 shadow-lg bg-white flex justify-center items-center rounded-full cursor-pointer">
+      <i class="fa-solid fa-arrow-right text-xl text-[#2042B6]"></i>
+  </div>
+     </div>
+
+     <div class="flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between">
+      <div class="flex flex-col lg:flex-row">
+        <div class="flex gap-2 ml-5 items-center">
+          <h6 class="text-black text-lg">Pages</h6>
+          <select class="w-60 px-4 py-2 rounded-full text-lg bg-white text-black shadow-lg ">
+            <option value="">1 and 2</option>
+            <option value="">2 and 3</option>
+            <option value="">3 and 4</option>
+          </select>
+          <h6 class="text-black hidden lg:block text-lg">of 37</h6>
         </div>
-        <div id="prev" class=" h-14 w-14 shadow-lg bg-white flex justify-center items-center rounded-full cursor-pointer">
-          <i class="fa-solid fa-arrow-right text-xl text-[#2042B6]"></i>
       </div>
 
-      <div class="flex gap-2 ml-5 items-center">
-        <h6 class="text-black text-lg">Pages</h6>
-        <select class="w-60 px-4 py-2 rounded-full text-lg bg-white text-black shadow-lg ">
-          <option value="">1 and 2</option>
-          <option value="">2 and 3</option>
-          <option value="">3 and 4</option>
-        </select>
-        <h6 class="text-black text-lg">of 37</h6>
+      <div class="lg:ml-52">
+        <button class="w-fit px-4 py-2 rounded-full border bg-[#2042B6] text-white border-gray-300 shadow-lg">Download the 2023 Report</button>
       </div>
-    </div>
-    <div class="mr-24">
-      <button class="w-fit px-4 py-2 rounded-full border bg-[#2042B6] text-white border-gray-300 shadow-lg">Download the 2023 Report</button>
-    </div>
+     </div>
+     </div>
         </div>
         </section>
 
@@ -360,18 +367,18 @@
             <div>
               <div class="space-y-6">
                 <div>
-                  <h3 class="font-semibold text-gray-800">Cambridge</h3>
-                  <p class="text-gray-600">70728 Yost Burg,<br> North Magdaleneview,<br> UT 97952-2814</p>
+                  <h3 class="font-semibold text-[#191618]">Cambridge</h3>
+                  <p class="#191618">70728 Yost Burg,<br> North Magdaleneview,<br> UT 97952-2814</p>
                 </div>
                 <div class="border border-[#9FA0A1]"></div>
                 <div>
-                  <h3 class="font-semibold text-gray-800">London</h3>
-                  <p class="text-gray-600">Suite 292 903 Stehr Streets,<br> Langworthtown, SC 94577-9465</p>
+                  <h3 class="font-semibold text-[#191618]">London</h3>
+                  <p class="#191618">Suite 292 903 Stehr Streets,<br> Langworthtown, SC 94577-9465</p>
                 </div>
                 <div class="border border-[#9FA0A1]"></div>
                 <div>
-                  <h3 class="font-semibold text-gray-800">San Francisco</h3>
-                  <p class="text-gray-600">19837 Gilberto Lodge,<br> Lake Kendallville,<br> Colorado - 97392, Bhutan</p>
+                  <h3 class="font-semibold text-[#191618]">San Francisco</h3>
+                  <p class="#191618">19837 Gilberto Lodge,<br> Lake Kendallville,<br> Colorado - 97392, Bhutan</p>
                 </div>
                 <div class="border border-[#9FA0A1]"></div>
                 <div class="flex gap-5">
