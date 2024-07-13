@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+    scroll-behavior: smooth;
+  }
       /* Add your custom styles here */
       .header-top {
         position: sticky;
@@ -34,3 +38,20 @@
     .slide {
         min-width: 100%;
     }
+
+
+
+    /* header */
+    .hidden { display: none; }
+    .dropdown-menu { 
+
+        border-radius: 0.5rem; 
+    }
+    .dropdown-menu a {
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-menu a:hover {
+        background-color: #E6E6E6;
+    } 
