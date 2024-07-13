@@ -1,11 +1,11 @@
-fetch("/wppoolportfulio.json")
+fetch("/JSON/wppoolportfulio.json")
   .then(res => res.json())
   .then(data => {
     const portfolioItems = document.getElementById("portfolioItems");
     data.forEach(item => {
       const div = document.createElement("div");
       div.innerHTML = `
-        <div class="w-full lg:w-60 bg-white h-32 flex justify-center items-center rounded-lg">
+        <div class="w-full lg:w-60 bg-white h-32 flex flex-wrap justify-center items-center rounded-lg">
           <img class="" src="${item.img}" alt="">
         </div>
       `;

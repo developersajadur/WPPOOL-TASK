@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Nantes', sans-serif;
+}
+/* Example of applying Nantes font to headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nantes', sans-serif; /* Apply Nantes font to headings */
+}
+
+
+/* Custom styles */
+.header-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #2042B6;
+    color: white;
+    padding: 10px;
+    font-family: 'Nantes', sans-serif; /* Apply Nantes font to header */
+}
+
+.header-chart {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #F3F3F3;
+    color: black;
+    padding: 10px;
+    display: none;
+}
+
+/* Slider */
+.slider-container {
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+/* Dropdown menu */
+.hidden {
+    display: none;
+}
+
+.dropdown-menu {
+    border-radius: 0.5rem;
+}
+
+.dropdown-menu a {
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #E6E6E6;
+}
+
+/* State */
+#State {
+    background-image: url("/image/slide-section-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+/* Rectangle */
+.Rectangle {
+    background-image: url("/image/Rectangle-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top; /* Adjusted position */
+}

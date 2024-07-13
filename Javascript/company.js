@@ -1,4 +1,4 @@
-fetch('company.json')
+fetch('/JSON/company.json')
             .then(response => response.json())
             .then(data => {
                 const tableBody = document.getElementById('company-table-body');

@@ -1,4 +1,4 @@
-fetch("/storyIdea.json")
+fetch("/JSON/storyIdea.json")
   .then(response => response.json())
   .then(data => {
     const storiesContainers = document.querySelectorAll(".stories");

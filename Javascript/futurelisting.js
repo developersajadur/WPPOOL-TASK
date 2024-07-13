@@ -1,4 +1,4 @@
-fetch("/futurelistings.json")
+fetch("/JSON/futurelistings.json")
   .then(res => res.json())
   .then(data => {
     const futureListings = document.getElementById("FutureListings");
